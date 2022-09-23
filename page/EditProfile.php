@@ -8,7 +8,7 @@ $user = mysqli_fetch_assoc($query);
 solid #D40013; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
     <div class="body d-flex justify-content-between">
         <h4>Edit Profile</h4>
-        <a href="../page/myProfilePage.php"><i class="fa fa-arrow-left " style="color: red" aria-hidden="true"></i></a>
+        <a href="../page/myProfilePage.php"><i class="fa fa-arrow-left fa-2x" style="color: red" aria-hidden="true"></i></a>
         
     </div>
     <hr>
