@@ -16,7 +16,7 @@
             echo
                 '<script>
                 alert("Berhasil Tambah Movie");
-                window.location = "../page/insertListMovie.php"
+                window.location = "../page/listMoviesPage.php"
                 </script>';
         }else{
             echo

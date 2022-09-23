@@ -6,9 +6,9 @@ session_start();
         $name = $_POST['Name'];
         $email = $_POST['Email'];
         $phonenum = $_POST['PhoneNumber'];
-        $membership = $_POST['Membership'];
+        $job = $_POST['jobs'];
 
-        $query = mysqli_query($con, "UPDATE users SET name = '$name', email = '$email', phonenum = '$phonenum', membership = 'Membership' WHERE id = " .$_SESSION["user"]["id"]);
+        $query = mysqli_query($con, "UPDATE users SET name = '$name', email = '$email', phonenum = '$phonenum', job = '$job' WHERE id = " .$_SESSION["user"]["id"]);
 
         if($query){
             echo

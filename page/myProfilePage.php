@@ -23,12 +23,16 @@ solid #D40013; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 
             <input type="text" class="form-control" id="Email" name="Email" required value="<?php echo $user['email'] ?> " disabled>
         </div>
         <div class="mb-3">
+            <label for="jobs" class="form-label">Job</label>
+            <input type="text" class="form-control" id="jobs" name="jobs" required value="<?php echo $user['job'] ?> " disabled>
+        </div>
+        <div class="mb-3">
             <label for="Phone Number" class="form-label">Phone Number</label>
             <input type="text" class="form-control" id="Phone Number" name="Phone Number" required value="<?php echo $user['phonenum'] ?>" disabled>
         </div>
         <div class="mb-3">
             <label for="Membership" class="form-label">Membership</label>
-            <input type="text" class="form-control" id="Membership" name="Membership" required value="<?php echo $user['membership'] ?>" disabled>
+            <input type="text" class="form-control" id="Membership" name="Membership" value="<?php echo $user['membership'] ?>" disabled> 
         </div>
     </form>
 </div>

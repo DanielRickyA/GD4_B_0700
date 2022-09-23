@@ -12,7 +12,7 @@ solid #D40013; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 
         
     </div>
     <hr>
-    <form action="../process/EditProfileProcess.php" method="post">
+    <form action="../process/EditProfileProcess.php" method="POST">
         <div class="mb-3">
             <label for="Name" class="form-label">Name</label>
             <input type="text" class="form-control" id="Name" name="Name" required value="<?php echo $user['name'] ?>">
@@ -22,13 +22,22 @@ solid #D40013; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 
             <label for="Email" class="form-label">Email2</label>
             <input type="text" class="form-control" id="Email" name="Email" required value="<?php echo $user['email'] ?>">
         </div>
+        
+        <div class="mb-3">
+            <label for="jobs" class="form-label">Job</label>
+            <select id="jobs" class="form-select" id="jobs" name="jobs" value="<?php echo $user['job'] ?> ">
+            <option>Astronot</option>
+            <option>Polisi</option>
+            <option>Dosen</option>
+            </select>
+        </div>
         <div class="mb-3">
             <label for="PhoneNumber" class="form-label">Phone Number</label>
             <input type="text" class="form-control" id="PhoneNumber" name="PhoneNumber" required value="<?php echo $user['phonenum'] ?>">
         </div>
         <div class="mb-3">
             <label for="Membership" class="form-label">Membership</label>
-            <input type="text" class="form-control" id="Membership" name="Membership" required value="<?php echo $user['membership'] ?>">
+            <input type="text" class="form-control" id="Membership" name="Membership" value="<?php echo $user['membership'] ?>" disabled> 
         </div>
 
         <div class="col-12">
