@@ -10,6 +10,33 @@
         $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
         $name = $_POST['name'];
         $phonenum = $_POST['phonenum'];
+        $error_counter = 0;
+        $query = mysqli_query($con, "SELECT * FROM `users` WHERE phonenum = '$phonenum';");
+        if(mysqli_num_rows($query) > 0) {
+            $error_counter++;
+            ?>
+            <script>
+                alert("Phone Number tidak boleh sama / harus unik");
+            </script>
+        <?php }
+
+        $query = mysqli_query($con, "SELECT * FROM `users` WHERE email = '$email';");
+        if(mysqli_num_rows($query) > 0) {
+            $error_counter++;
+            ?>
+            <script>
+                alert("Email tidak boleh sama / harus unik");
+            </script>
+        <?php }
+
+        if($error_counter > 0) { ?>
+            <script>
+                window.history.back()
+            </script>
+        <?php
+        exit();
+        } 
+        
         $membership = $_POST['membership'];
         // Melakukan insert ke databse dengan query dibawah ini
         $query = mysqli_query($con,"INSERT INTO users(email, password, name, phonenum, membership) VALUES ('$email', '$password', '$name', '$phonenum', '$membership')") or die(mysqli_error($con)); // perintah mysql yang gagal dijalankan ditangani oleh perintah “or die”

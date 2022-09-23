@@ -22,3 +22,4 @@ alert("Delete Failed"); window.location = "../page/listMoviesPage.php"
 window.history.back()
 </script>';
 }
+?>

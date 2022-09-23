@@ -16,7 +16,7 @@ EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="a
     <nav class="navbar navbar-dark bg-dark fixed-top">
         <div class="container">
             <!-- Nama : nama panggilan kalian -->
-            <a class="navbar-brand fw-bold" href="/gd4_B_0700">PHP - Nama</a>
+            <a class="navbar-brand fw-bold" href="/gd4_B_0700">PHP - Daniel Ricky Alexander</a>
         </div>
     </nav>
     <div class="bg bg-light text-dark">
@@ -27,11 +27,11 @@ EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="a
                     <form action="../process/registerProcess.php" method="post">
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="formlabel">Name</label>
-                            <input class="form-control" id="name" name="name" aria-describedby="emailHelp">
+                            <input class="form-control" id="name" name="name" aria-describedby="emailHelp" required>
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="formlabel">Phone Number</label>
-                            <input class="form-control" id="phonenum" name="phonenum" aria-describedby="emailHelp">
+                            <input class="form-control" id="phonenum" name="phonenum" aria-describedby="emailHelp" required>
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="formlabel">Membership</label>
@@ -43,11 +43,11 @@ EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="a
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="formlabel">Email</label>
-                            <input class="form-control" id="email" name="email" aria-describedby="emailHelp">
+                            <input class="form-control" id="email" name="email" aria-describedby="emailHelp" required>
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputPassword1" class="formlabel">Password</label>
-                            <input type="password" class="form-control" id="password" name="password">
+                            <input type="password" class="form-control" id="password" name="password" required>
                         </div>
                         <div class="d-grid gap-2">
                             <button type="submit" class="btn btn-primary" name="register">Register</button>

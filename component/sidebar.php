@@ -5,7 +5,7 @@
     }else {
         include('../db.php');
     }
-    echo '
+    echo'
         <!Doctype html>
         <html lang="en">
         <head>
@@ -67,14 +67,20 @@
                             <a href="./dashboardPage.php" style="font-weight:600"
                             >Dashboard</a>
                         </div>
-                        <div class="content-menu " >
+                        <div class="content-menu" >
                             <i class="fa fa-film"></i>
                             <a href="./listMoviesPage.php" style="fontweight:600">List Movie</a>
                         </div>
-                        <div class="content-menu " >
+                        <div class="content-menu">
+                            <i class="fa fa-user-circle-o"></i>
+                            <a href="./EditProfile.php" style="fontweight:600">&nbspEdit Profile</a>
+                        </div>
+                        <div class="content-menu" >
                             <i class="fa fa-sign-out"></i>
                             <a href="../process/logoutProcess.php" style="fontweight:600">&nbspLogout</a>
                         </div>
+                        
+                        
                     <hr>
                 </div>
             </div>'
