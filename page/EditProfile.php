@@ -25,7 +25,7 @@ solid #D40013; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 
         
         <div class="mb-3">
             <label for="jobs" class="form-label">Job</label>
-            <select id="jobs" class="form-select" id="jobs" name="jobs" value="<?php echo $user['job'] ?> ">
+            <select id="jobs" class="form-select" id="jobs" name="jobs" value="<?php echo $user['job'] ?>">
             <option>Astronot</option>
             <option>Polisi</option>
             <option>Dosen</option>

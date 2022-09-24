@@ -75,6 +75,10 @@
                             <i class="fa fa-user-circle-o"></i>
                             <a href="./EditProfile.php" style="fontweight:600">&nbspEdit Profile</a>
                         </div>
+                        <div class="content-menu">
+                            <i class="fa fa-television" aria-hidden="true"></i>
+                            <a href="./listSeriesPage.php" style="fontweight:600">&nbspList Series</a>
+                        </div>
                         <div class="content-menu" >
                             <i class="fa fa-sign-out"></i>
                             <a href="../process/logoutProcess.php" style="fontweight:600">&nbspLogout</a>
