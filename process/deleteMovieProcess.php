@@ -8,18 +8,18 @@ if (isset($_GET['id'])) {
     if ($queryDelete) {
         echo
         '<script>
-alert("Delete Success"); window.location = "../page/listMoviesPage.php"
-</script>';
+            alert("Delete Success"); window.location = "../page/listMoviesPage.php"
+        </script>';
     } else {
         echo
         '<script>
-alert("Delete Failed"); window.location = "../page/listMoviesPage.php"
-</script>';
+            alert("Delete Failed"); window.location = "../page/listMoviesPage.php"
+        </script>';
     }
 } else {
     echo
     '<script>
-window.history.back()
-</script>';
-}
+        window.history.back()
+    </script>';
+    }
 ?>
