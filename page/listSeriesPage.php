@@ -41,9 +41,9 @@ solid #D40013; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 
                             <td>' . $data['season'] . '</td>
                             <td>' . $data['synopsis'] . '</td>
                             <td>
-                                <a href="../process/deleteMovieProcess.php?id='.$data['id'].'"
-                                onClick="return confirm ( \'Are you sure want to delete this
-                                data?\')"> <i style="color: red" class="fa fa-trash fa-2x"></i>
+                                <a href="../Page/EditListSeriesPage.php?id='.$data['id'].'" class="btn btn-success"><i class ="fa fa-pencil-square-o" aria-hidden="true "></i></a>
+                                <a href="../process/deleteSeriesProcess.php?id='.$data['id'].'" class="btn btn-danger"
+                                onClick="return confirm ( \'Are you sure want to delete this data?\')"> <i class="fa fa-trash"></i>
                                 </a>
                             </td>
 

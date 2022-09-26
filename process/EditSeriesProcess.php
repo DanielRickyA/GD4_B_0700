@@ -1,8 +1,9 @@
 <?php
-    if(isset($_POST['insertSeries'])){
+session_start();
+    if(isset($_POST['UpdateSeries'])){
         include('../db.php');
-        
-        $NamaSeries = $_POST['NamaSeries'];
+
+        $name = $_POST['NamaSeries'];
         $genre = $_POST['genre'];
         $realease = $_POST['realease'];
         $episode = $_POST['episode'];
@@ -10,24 +11,24 @@
         $synopsis = $_POST['synopsis'];
 
         $genre_string = implode(", ", $genre);
-                               //pemmisah, array 
+        
 
-        $query = mysqli_query($con, "INSERT INTO series(name, genre, realease, episode, season, synopsis) 
-            VALUES ('$NamaSeries', '$genre_string', '$realease', '$episode', '$season', '$synopsis')")
-            or die(mysqli_error($con));
+        $query = mysqli_query($con, "UPDATE series SET name = '$name', genre = '$genre_string', realease = '$realease', 
+            season = '$season', synopsis = '$synopsis'  WHERE id = " .$_SESSION["series"]["id"]);
 
         if($query){
             echo
                 '<script>
-                alert("Berhasil Tambah Series");
-                window.location = "../page/listSeriesPage.php"
+                alert("Berhasil Update Profil");
+                window.location = "../page/ListSeriesPage.php"
                 </script>';
         }else{
             echo
                 '<script>
-                alert("Tambah Failed");
+                alert("Gagal Update Profil");
                 </script>';
         }
+        
     }else{
         echo
             '<script>

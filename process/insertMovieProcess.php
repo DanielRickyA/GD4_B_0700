@@ -24,6 +24,11 @@
                 alert("Tambah Failed");
                 </script>';
         }
+    }else{
+        echo
+            '<script>
+            window.history.back()
+            </script>';
     }
 
 ?>
